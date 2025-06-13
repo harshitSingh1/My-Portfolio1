@@ -1,0 +1,96 @@
+/* Custom scrollbar for better immersion */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #001f2d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0a3d5e;
+  border-radius: 10px;
+  border: 2px solid #001f2d;
+}
+
+/* Animations for marine animals */
+@keyframes swim-left-right {
+  0%, 100% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(30px) scaleX(1);
+  }
+}
+@keyframes swim-right-left {
+  0%, 100% {
+    transform: translateX(0) scaleX(-1);
+  }
+  50% {
+    transform: translateX(-30px) scaleX(-1);
+  }
+}
+@keyframes float-up-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes tail-wag {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes fin-flap {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes wavy-swim {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Small fish wavy swim */
+.small-fish {
+  animation: wavy-swim 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  position: absolute;
+  cursor: default;
+  user-select: none;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+}
+
+/* Food pellet style - colorful sprinkles */
+.food-pellet {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 50;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.4));
+  animation: fall 5s linear forwards;
+}
+@keyframes fall {
+  to {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
