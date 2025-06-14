@@ -90,7 +90,7 @@ const SmallFishSwarm = () => {
       y,
       eaten: false,
       fallDistance: 0,
-      fallSpeed: 2 + Math.random() * 0.15,
+      fallSpeed: 1.3 + Math.random() * 0.15,
       color: sprinkleColors[Math.floor(Math.random() * sprinkleColors.length)],
       createdAt: Date.now(),
       lifespan: 3000 + Math.random() * 1000

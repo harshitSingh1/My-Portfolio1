@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /* Custom animations */
 @keyframes float-up-down {
   0%, 100% { transform: translateY(0); }

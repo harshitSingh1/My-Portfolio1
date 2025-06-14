@@ -10,6 +10,18 @@ import GiantIsopod from './seaCreatures/GiantIsopod';
 import DeepSeaAnglerCrab from './seaCreatures/DeepSeaAnglerCrab';
 import Turtle from './seaCreatures/Turtle';
 
+// Import your images
+import rockPlant1 from '../assets/images/rock-plant1.gif';
+import rockPlant4 from '../assets/images/rock-plant4.png';
+import rockPlant5 from '../assets/images/rock-plant5.png';
+import plant2 from '../assets/images/plant2.gif';
+import plants3 from '../assets/images/plants3.png';
+import treasure from '../assets/images/treasure.gif';
+import crab1 from '../assets/images/crab1.gif';
+import starfish1 from '../assets/images/starfish1.gif';
+import fish1 from '../assets/images/fish1.gif';
+import octopusImage from '../assets/images/octopus.png'; // Renamed to avoid conflict with imported component
+
 const FloatingBubble = ({ top, left, right, size, opacity, delay }) => (
     <div
         className={`absolute w-${size} h-${size} rounded-full bg-white animate-float-up-down`}
@@ -272,14 +284,14 @@ const DeepSeaBackground = () => {
                             </div>
 
                             {/* Seabed elements */}
-                            <ImageSeabedElement src="/src/assets/images/rock-plant1.gif" alt="Underwater Rock Plant" className="left-[8%] bottom-[-7%] w-[200px] h-auto" style={{ zIndex: 2 }} animationClass="subtle-float" />
-                            <ImageSeabedElement src="/src/assets/images/rock-plant4.png" alt="Underwater Rock Plant 4" className="right-[-2%] bottom-[-2%] w-[250px] h-auto" style={{ zIndex: 2 }} animationClass="subtle-float" />
-                            <ImageSeabedElement src="/src/assets/images/rock-plant5.png" alt="Underwater Rock Plant 5" className="left-[35%] bottom-[-1%] w-[300px] h-auto" style={{ zIndex: 1 }} animationClass="subtle-float" />
-                            <ImageSeabedElement src="/src/assets/images/plant2.gif" alt="Underwater Plant 2" className="right-[36%] bottom-[0%] w-[100px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
-                            <ImageSeabedElement src="/src/assets/images/plant2.gif" alt="Underwater Plant 2" className="right-[30%] bottom-[0%] w-[100px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
-                            <ImageSeabedElement src="/src/assets/images/plants3.png" alt="Underwater Plants" className="right-[15%] bottom-[-5%] w-[150px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
-                            <ImageSeabedElement src="/src/assets/images/treasure.gif" alt="Sunken Treasure Chest" className="right-[10%] bottom-[-3%] w-[80px] h-auto" style={{ zIndex: 1 }} animationClass="pulse-slow" />
-                            <ImageSeabedElement src="/src/assets/images/rock-plant4.png" alt="Underwater Rock Plant 4" className="left-[-2%] bottom-[-2%] w-[250px] h-auto" style={{ zIndex: 1 }} animationClass="subtle-float" />
+                            <ImageSeabedElement src={rockPlant1} alt="Underwater Rock Plant" className="left-[8%] bottom-[-7%] w-[200px] h-auto" style={{ zIndex: 2 }} animationClass="subtle-float" />
+                            <ImageSeabedElement src={rockPlant4} alt="Underwater Rock Plant 4" className="right-[-2%] bottom-[-2%] w-[250px] h-auto" style={{ zIndex: 2 }} animationClass="subtle-float" />
+                            <ImageSeabedElement src={rockPlant5} alt="Underwater Rock Plant 5" className="left-[35%] bottom-[-1%] w-[300px] h-auto" style={{ zIndex: 1 }} animationClass="subtle-float" />
+                            <ImageSeabedElement src={plant2} alt="Underwater Plant 2" className="right-[36%] bottom-[0%] w-[100px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
+                            <ImageSeabedElement src={plant2} alt="Underwater Plant 2" className="right-[30%] bottom-[0%] w-[100px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
+                            <ImageSeabedElement src={plants3} alt="Underwater Plants" className="right-[15%] bottom-[-5%] w-[150px] h-auto" style={{ zIndex: 2 }} animationClass="sway" />
+                            <ImageSeabedElement src={treasure} alt="Sunken Treasure Chest" className="right-[10%] bottom-[-3%] w-[80px] h-auto" style={{ zIndex: 1 }} animationClass="pulse-slow" />
+                            <ImageSeabedElement src={rockPlant4} alt="Underwater Rock Plant 4" className="left-[-2%] bottom-[-2%] w-[250px] h-auto" style={{ zIndex: 1 }} animationClass="subtle-float" />
 
                             <FloatingBubble top="60%" left="10%" size="4" opacity={0.15} delay="0.1s" />
                             <FloatingBubble top="70%" left="40%" size="3" opacity={0.1} delay="0.5s" />
@@ -287,10 +299,10 @@ const DeepSeaBackground = () => {
                             <FloatingBubble top="65%" right="30%" size="2" opacity={0.08} delay="0.3s" />
                             <FloatingBubble top="75%" left="25%" size="3" opacity={0.12} delay="1s" />
 
-                            <ImageMarineAnimal src="/src/assets/images/crab1.gif" alt="Deep Sea Crab" className="left-[13%] bottom-[12%] w-[80px] h-auto" style={{ zIndex: 4 }} animationClass="wiggle" />
-                            <ImageMarineAnimal src="/src/assets/images/starfish1.gif" alt="Deep Sea Starfish" className="right-[45%] bottom-[3%] w-[70px] h-auto" style={{ zIndex: 4 }} animationClass="slow-pulse" />
-                            <ImageMarineAnimal src="/src/assets/images/fish1.gif" alt="Deep Sea Fish" className="left-[60%] bottom-[15%] w-[100px] h-auto" style={{ zIndex: 5 }} animationClass="animate-swim-gentle" />
-                            <ImageMarineAnimal src="/src/assets/images/octopus.png" alt="Deep Sea Octopus" className="left-[25%] bottom-[-2%] w-[120px] h-auto" style={{ zIndex: 6 }} animationClass="octopus-float" />
+                            <ImageMarineAnimal src={crab1} alt="Deep Sea Crab" className="left-[13%] bottom-[12%] w-[80px] h-auto" style={{ zIndex: 4 }} animationClass="wiggle" />
+                            <ImageMarineAnimal src={starfish1} alt="Deep Sea Starfish" className="right-[45%] bottom-[3%] w-[70px] h-auto" style={{ zIndex: 4 }} animationClass="slow-pulse" />
+                            <ImageMarineAnimal src={fish1} alt="Deep Sea Fish" className="left-[60%] bottom-[15%] w-[100px] h-auto" style={{ zIndex: 5 }} animationClass="animate-swim-gentle" />
+                            <ImageMarineAnimal src={octopusImage} alt="Deep Sea Octopus" className="left-[25%] bottom-[-2%] w-[120px] h-auto" style={{ zIndex: 6 }} animationClass="octopus-float" />
                         </div>
                     </div>
                 </div>

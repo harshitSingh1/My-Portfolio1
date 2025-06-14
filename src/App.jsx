@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import DeepSeaBackground from './components/DeepSeaBackground'
+import DeepSeaBackground from './components'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
@@ -40,18 +40,17 @@ export default function App() {
   }, [])
 
   return (
-    <div className="relative">
+  <div className="relative overflow-x-hidden">
     <Navbar activeSection={activeSection} />
-      <DeepSeaBackground />
-      
-      <div className="relative z-10 pt-16">
-        <Hero id="home" />
-        <About id="about" />
-        <Skills id="skills" />
-        <Experience id="experience" />
-        <Projects id="projects" />
-        <Contact id="contact" />
-      </div>
+    <DeepSeaBackground />
+    <div className="relative z-10 pt-16 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
+      <Hero id="home" />
+      <About id="about" />
+      <Skills id="skills" />
+      <Experience id="experience" />
+      <Projects id="projects" />
+      <Contact id="contact" />
     </div>
-  )
+  </div>
+)
 }
