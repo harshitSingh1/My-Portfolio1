@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react' 
 import DeepSeaBackground from './components'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
@@ -34,23 +34,24 @@ export default function App() {
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => {window.removeEventListener('scroll', handleScroll); 
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
       clearTimeout(timeoutId);
     }
   }, [])
 
   return (
-  <div className="relative overflow-x-hidden">
-    <Navbar activeSection={activeSection} />
-    <DeepSeaBackground />
-    <div className="relative z-10 pt-16 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
-      <Hero id="home" />
-      <About id="about" />
-      <Skills id="skills" />
-      <Experience id="experience" />
-      <Projects id="projects" />
-      <Contact id="contact" />
+    <div className="relative">
+      <Navbar activeSection={activeSection} />
+      <DeepSeaBackground />
+      <div className="relative z-10 pt-16">
+        <Hero id="home" />
+        <About id="about" />
+        <Skills id="skills" />
+        <Experience id="experience" />
+        <Projects id="projects" />
+        <Contact id="contact" />
+      </div>
     </div>
-  </div>
-)
+  )
 }
