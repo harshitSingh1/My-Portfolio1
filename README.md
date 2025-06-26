@@ -1,5 +1,7 @@
 Website: https://harshit-singh-portfolio1.vercel.app/
 
+![Harshit Singh](https://github.com/user-attachments/assets/a6ed7117-be30-4ca2-bca8-695db9d68e17)
+
 # 🌊 Inspiration
 
 The ocean holds endless mysteries — the deeper we dive, the more wonders we uncover. Knowledge is no different. On the surface, things may seem simple, but as we explore deeper into any subject or idea, we discover layers we never imagined. This portfolio is inspired by that journey — a digital ocean that reflects my passion for diving deep into learning, creating, and growing as a developer
