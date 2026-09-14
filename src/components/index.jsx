@@ -55,27 +55,34 @@ const DeepSeaBackground = () => {
     const animalContainerRefs = useRef([]);
 
     useEffect(() => {
+        let ticking = false;
         const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const totalHeight = document.body.scrollHeight - window.innerHeight;
-            const progress = Math.min(scrollY / totalHeight, 1);
-            setScrollProgress(progress);
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollY = window.scrollY;
+                    const totalHeight = Math.max(1, document.body.scrollHeight - window.innerHeight);
+                    const progress = Math.min(Math.max(0, scrollY / totalHeight), 1);
+                    setScrollProgress(progress || 0);
 
-            animalContainerRefs.current.forEach((animalDiv, i) => {
-                if (animalDiv) {
-                    const speedFactor = parseFloat(animalDiv.dataset.parallaxSpeed) || 0.1;
-                    const movementScale = parseFloat(animalDiv.dataset.parallaxScale) || 25;
+                    animalContainerRefs.current.forEach((animalDiv, i) => {
+                        if (animalDiv) {
+                            const speedFactor = parseFloat(animalDiv.dataset.parallaxSpeed) || 0.1;
+                            const movementScale = parseFloat(animalDiv.dataset.parallaxScale) || 25;
 
-                    const offsetY = scrollY * speedFactor;
-                    const offsetX = Math.sin(scrollY / (150 + (i % 10) * 10 + i) * movementScale);
-                    const rotation = Math.sin(scrollY / (200 + (i % 10) * 15 + i * 0.5)) * 2;
+                            const offsetY = scrollY * speedFactor;
+                            const offsetX = Math.sin(scrollY / (150 + (i % 10) * 10 + i) * movementScale);
+                            const rotation = Math.sin(scrollY / (200 + (i % 10) * 15 + i * 0.5)) * 2;
 
-                    animalDiv.style.transform = `translateX(${offsetX}px) translateY(${offsetY}px) rotate(${rotation}deg)`;
-                }
-            });
+                            animalDiv.style.transform = `translate3d(${offsetX}px, ${offsetY}px, 0) rotate(${rotation}deg)`;
+                        }
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -278,7 +285,7 @@ const DeepSeaBackground = () => {
                                 ))}
 
                                 <div className="absolute w-[100px] h-[20px] bg-[#3B2C2A] rounded-full bottom-[10px] left-[20%] transform rotate-10 opacity-70 z-10"></div>
-                                <div className="absolute w-[80px] h-[15px] bg-[#2E3C2B] rounded-full bottom-[5px] right-[25%] transform rotate-5 opacity={70} z-10"></div>
+                                <div className="absolute w-[80px] h-[15px] bg-[#2E3C2B] rounded-full bottom-[5px] right-[25%] transform rotate-5 opacity-70 z-10"></div>
                                 <div className="absolute w-[150px] h-[30px] bg-[#1F2F3F] rounded-full bottom-[8px] left-[60%] transform -rotate-15 opacity-70 z-10"></div>
 
                             </div>

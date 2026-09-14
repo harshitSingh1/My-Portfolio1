@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react' 
-import DeepSeaBackground from './components'
 import Navbar from './sections/Navbar'
+import DeepSeaBackground from './components'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
@@ -15,25 +15,33 @@ export default function App() {
     const timeoutId = setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
+    
+    let ticking = false;
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact']
-      const scrollPosition = window.scrollY + 100
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact']
+          const scrollPosition = window.scrollY + 100
 
-      for (const section of sections) {
-        const element = document.getElementById(section)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetHeight = element.offsetHeight
+          for (const section of sections) {
+            const element = document.getElementById(section)
+            if (element) {
+              const offsetTop = element.offsetTop
+              const offsetHeight = element.offsetHeight
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
-            break
+              if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                setActiveSection(section)
+                break
+              }
+            }
           }
-        }
+          ticking = false;
+        });
+        ticking = true;
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(timeoutId);

@@ -108,13 +108,13 @@ const About = ({ id }) => {
             animate="visible"
           >
             <motion.p className="text-xl" variants={itemVariants}>
-              <span className="text-accent font-semibold">Hey there! I'm Harshit Singh</span> — a final-year Computer Science student and an enthusiastic software developer.
+              <span className="text-accent font-semibold">Hey there! I am Harshit Singh</span>, a computer science graduate and an enthusiastic software developer.
             </motion.p>
             <motion.p variants={itemVariants}>
-              I'm really passionate about building tech solutions that make a real difference and making sure they're super secure. With a solid foundation in 'data structures', 'algorithms', and hands-on 'full-stack development', I also specialize in 'cybersecurity', focusing on keeping data and systems safe in today's connected digital world.
+              I am really passionate about building tech solutions that make a real difference and making sure they are super secure. With a solid foundation in data structures, algorithms, and hands on full stack development, I also specialize in cybersecurity, focusing on keeping data and systems safe in today's connected digital world.
             </motion.p>
             <motion.p variants={itemVariants}>
-              I love turning complex problems into smart, scalable applications, and I'm always exploring new tools and ideas. I'm excited to collaborate, learn, and contribute to opportunities where tech truly creates a real-world impact.
+              I love turning complex problems into smart, scalable applications, and I am always exploring new tools and ideas. I am excited to collaborate, learn, and contribute to opportunities where tech truly creates a real world impact.
             </motion.p>
           </motion.div>
 
@@ -248,19 +248,19 @@ const About = ({ id }) => {
               {
                 institution: "Bennett University, Greater Noida",
                 degree: "B.Tech in Computer Science & Engineering",
-                period: "2021 - 2025 (Expected)",
-                details: "CGPA: 9.23 (up to 7th semester)",
+                period: "2021 - 2025 (Graduated)",
+                details: "CGPA: 9.34",
                 icon: '🎓'
               },
               {
-                institution: "Vidyagyan School, Bulandshahar",
+                institution: "Vidyagyan Leadership Academy, Bulandshahar",
                 degree: "Class XII (CBSE)",
                 period: "2021",
-                details: "Percentage: 97.6%",
+                details: "Percentage: 96.4%",
                 icon: '📚'
               },
               {
-                institution: "Vidyagyan School, Bulandshahar",
+                institution: "Vidyagyan Leadership Academy, Bulandshahar",
                 degree: "Class X (CBSE)",
                 period: "2019",
                 details: "Percentage: 94.8%",

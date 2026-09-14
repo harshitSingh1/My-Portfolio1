@@ -19,20 +19,20 @@ const Skills = ({ id }) => {
     "C++": <SiCplusplus className="inline-block mr-1 text-blue-600" />,
     "Python": <SiPython className="inline-block mr-1 text-blue-400" />,
     "Java": <FaJava className="inline-block mr-1 text-red-500" />,
-    "Bash Scripting": <FaTerminal className="inline-block mr-1 text-gray-400" />,
-    "HTML": <FaHtml5 className="inline-block mr-1 text-orange-500" />,
-    "CSS": <FaCss3Alt className="inline-block mr-1 text-blue-500" />,
+    "TypeScript": <FaJs className="inline-block mr-1 text-blue-400" />,
+    "HTML/CSS": <FaHtml5 className="inline-block mr-1 text-orange-500" />,
     "JavaScript": <FaJs className="inline-block mr-1 text-yellow-400" />,
     "React.js": <FaReact className="inline-block mr-1 text-cyan-400" />,
+    "Next.js": <FaReact className="inline-block mr-1 text-white" />,
     "Node.js": <FaNodeJs className="inline-block mr-1 text-green-500" />,
+    "Express.js": <FaNodeJs className="inline-block mr-1 text-gray-400" />,
     "Tailwind": <SiTailwindcss className="inline-block mr-1 text-sky-400" />,
     "MongoDB": <SiMongodb className="inline-block mr-1 text-green-600" />,
-    "Mongoose": <SiMongodb className="inline-block mr-1 h-4 w-4" />,
     "MySQL": <SiMysql className="inline-block mr-1 text-blue-700" />,
     "AWS": <FaAws className="inline-block mr-1 text-amber-500" />,
     "Linux": <FaLinux className="inline-block mr-1 text-gray-400" />,
-    "VMWare Workstation": <FaServer className="inline-block mr-1 text-purple-500" />,
-    "Packet Tracer": <FaNetworkWired className="inline-block mr-1 text-teal-500" />,
+    "Docker": <FaDocker className="inline-block mr-1 text-blue-500" />,
+    "Git": <FaGitAlt className="inline-block mr-1 text-orange-600" />,
   };
 
   const sphereSkillsLayer1 = [
@@ -62,21 +62,21 @@ const Skills = ({ id }) => {
 
   const skillCategories = [
     {
-      title: "Programming & Core Languages",
+      title: "Programming Languages",
       icon: <GiGears className="w-8 h-8 text-fuchsia-400" />,
-      skills: ["C++", "Python", "Java", "Bash Scripting"],
+      skills: ["C++", "Python", "Java", "JavaScript", "TypeScript"],
       color: "from-purple-500/20 to-blue-600/20"
     },
     {
       title: "Web Development",
       icon: <GiSpiderMask className="w-8 h-8 text-teal-400" />,
-      skills: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Tailwind"],
+      skills: ["React.js", "Next.js", "Node.js", "Express.js", "Tailwind", "HTML/CSS"],
       color: "from-cyan-500/20 to-teal-600/20"
     },
     {
       title: "Data & Infrastructure",
       icon: <GiOctopus className="w-8 h-8 text-indigo-400" />,
-      skills: ["MongoDB", "Mongoose", "MySQL", "AWS", "Linux", "VMWare Workstation", "Packet Tracer"],
+      skills: ["MongoDB", "MySQL", "AWS", "Linux", "Docker", "Git"],
       color: "from-emerald-500/20 to-green-600/20"
     }
   ];

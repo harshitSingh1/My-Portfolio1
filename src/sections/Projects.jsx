@@ -52,63 +52,63 @@ const Submarine = ({ submarineRef }) => (
 const Projects = ({ id }) => {
   const projects = [
     {
-      title: "GenConnect",
-      technologies: ["React", "Node.js", "MongoDB", "JWT"],
-      description: "I built this platform to help bridge the social and digital gap between teenagers and senior citizens. It's all about fostering mentorship, sharing skills, and creating really meaningful connections across generations.",
-      imageUrl: "https://github.com/user-attachments/assets/320b41d9-d9ca-4d60-8ce8-869eabddbbb0",
+      title: "ShikshaSathi AI",
+      technologies: ["React 19", "TypeScript", "Tailwind", "Node.js", "ElevenLabs"],
+      description: "Designed voice-first AI teaching platform generating multilingual lessons, quizzes, visual learning flows, and AI narration with Gemini, ElevenLabs, structured prompt engineering, and speech recognition. Engineered a resilient AI pipeline with 3-tier provider fallback, Zod schema validation, smart-board optimized UI, session management, and modular component architecture for reliable classroom delivery.",
+      imageUrl: "/shikshasathi.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/GenConnect", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://genconnect.vercel.app/", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/ShikshaSathi", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://shiksha-sathi-seven.vercel.app/", text: "Live" }
       ]
     },
     {
-      title: "APK Scanner",
-      technologies: ["Linux Bash Script", "Python"],
-      description: "This project was about creating a Mobile Application Vulnerability Scanner using Shell Scripting and Python. I enhanced it for 'bash scanning', which let me efficiently process over 80 APK files from different sources.",
-      imageUrl: "https://github.com/user-attachments/assets/3a0807b3-8af5-44d3-b620-5d04a27fa1df",
+      title: "SpendSense",
+      technologies: ["Next.js", "Tailwind", "Node.js", "Express", "MongoDB"],
+      description: "Built a scalable AI-powered financial intelligence platform with 15+ wealth planning tools, modular REST APIs, secure authentication, and MongoDB-backed architecture for personalized financial insights. Developed backend services featuring OTP protection, API rate limiting, payload sanitization, AI powered recommendations, and scalable database workflows for secure financial management.",
+      imageUrl: "/spendsense.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/Infinity---APK-Scanner", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://github.com/harshitSingh1/Infinity---APK-Scanner", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/SpendSense", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://spendsense-kzv9.onrender.com/", text: "Live" }
       ]
     },
     {
-      title: "FarmingNow",
-      technologies: ["React", "Node.js", "APIs"],
-      description: "FarmingNow is designed to help farmers with personalized crop recommendations, government schemes, and pest control alerts. It also offers weather forecasts and soil health monitoring, all powered by APIs from NASA, Google Gemini, Weather, and Mapbox.",
-      imageUrl: "https://github.com/user-attachments/assets/08c9819c-32d8-4652-9769-f6687f835462",
+      title: "First30.ai",
+      technologies: ["React", "TypeScript", "Tailwind", "ElevenLabs", "Supabase"],
+      description: "A voice-guided emergency assistance platform designed for the critical first 30 minutes before professional help arrives. It provides step by step guidance for 15+ emergency types, multilingual voice narration powered by ElevenLabs, and location based help to find nearby hospitals, transforming bystanders into capable first responders.",
+      imageUrl: "/first30ai.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/FarmingNow", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://farming-now.vercel.app/", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/First-30", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://preview--first-30-aid.lovable.app/", text: "Live" }
       ]
     },
     {
-      title: "BreakBuddy",
-      technologies: ["HTML", "CSS", "JavaScript", "AWS"],
-      description: "BreakBuddy is a Chrome extension I built to help you take quick, refreshing breaks from work. It offers over 10 activities like technical blogs, fun facts, jokes, quizzes, games, and even a task spinner for quick decisions.",
-      imageUrl: "https://github.com/user-attachments/assets/27625516-1aca-4bc6-8726-bb30da014a7f",
+      title: "PuzzleLogicHub",
+      technologies: ["Next.js 14", "TypeScript", "Tailwind", "React Query", "REST API"],
+      description: "A modern Next.js web application delivering daily step-by-step solutions for LinkedIn puzzle games. Features Server-Side Rendering (SSR) and Static Site Generation (SSG) for optimal SEO, seamlessly integrated with a decoupled backend REST API to fetch daily puzzle guides, videos, and dynamic content.",
+      imageUrl: "/puzzlelogichub.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/BreakBuddy", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://main.d2onf8i510ljit.amplifyapp.com/", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/DailyPuzzleSolve", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://www.logicpuzzlehub.xyz/", text: "Live" }
       ]
     },
     {
-      title: "CareerArk",
-      technologies: ["React", "Node.js", "CSS", "Python"],
-      description: "It's a career counselling webapp with a variety of services. It seamlessly integrates an 'AI Assistant', a free career test checking 7 skills, easy resume guidance, insightful college reviews, and helpful articles.",
-      imageUrl: "https://github.com/user-attachments/assets/fdfb820f-b087-40d7-a106-f100910dbc61",
+      title: "CivicLens",
+      technologies: ["React", "TypeScript", "Nodejs", "Express.js", "MongoDB"],
+      description: "Built a scalable full-stack platform with role-based access control (RBAC) and structured workflows, similar to CRM-style data management systems. Integrated modular backend APIs for handling submissions, validations, status tracking in different user roles. Implemented features like upvote, comment, and verification, improving user engagement by 40%.",
+      imageUrl: "/civiclens.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/CareerArk", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://main--careerark.netlify.app/", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/CivicLens", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://civiclens-frontend.onrender.com/", text: "Live" }
       ]
     },
     {
-      title: "Sell-Support",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      description: "I developed Sell-Support as an organizational system for offline businesses. It includes features like customer feedback, top product recommendations, pre-booking, e-receipts, and even borrowing/loan options.",
-      imageUrl: "https://github.com/user-attachments/assets/9b840e44-67ce-4176-b727-aed5171a0669",
+      title: "CodeMentor AI",
+      technologies: ["Chrome Extension (MV3)", "JavaScript", "AI APIs", "DOM Mutation"],
+      description: "An AI-powered DSA mentor Chrome Extension that guides users through LeetCode, Codeforces, and HackerRank problems. Features a progressive hint ladder, stuck detector, real-time approach comparator, and mistake pattern radar—all designed to coach algorithm solving skills without ever spoiling the final solution.",
+      imageUrl: "/codementor.png",
       links: [
-        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/Sell_Support", text: "Code" },
-        { icon: <ExternalLinkIcon />, url: "https://harshitsingh1.github.io/Sell_Support/", text: "Live" }
+        { icon: <GithubIcon />, url: "https://github.com/harshitSingh1/CodeMentor", text: "Code" },
+        { icon: <ExternalLinkIcon />, url: "https://github.com/harshitSingh1/CodeMentor", text: "Extension" }
       ]
     }
   ];
@@ -301,6 +301,7 @@ const Projects = ({ id }) => {
                       <img
                         src={project.imageUrl}
                         alt={project.title}
+                        loading="lazy"
                         className="w-full h-full object-cover rounded-md shadow-md"
                         style={{ filter: 'drop-shadow(0 0 8px rgba(0, 191, 255, 0.6))' }}
                         onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x250/0f172a/60a5fa?text=${encodeURIComponent(project.title.replace(/\s/g, '+'))}`; }}
@@ -321,11 +322,11 @@ const Projects = ({ id }) => {
                     </div>
                   </div>
 
-                  <div className="flex justify-between items-baseline mb-2">
-                    <h3 className="text-2xl font-bold text-cyan-200 font-inter mr-2">{project.title}</h3>
-                    <div className="flex flex-wrap gap-1 justify-end">
+                  <div className="flex flex-col mb-3">
+                    <h3 className="text-2xl font-bold text-cyan-200 font-inter mb-2 whitespace-nowrap truncate">{project.title}</h3>
+                    <div className="flex flex-wrap gap-1.5">
                       {project.technologies.map((tech, i) => (
-                        <span key={i} className="px-2 py-0.5 bg-blue-800/50 text-xs rounded-full flex items-center font-inter border border-blue-700 hover:bg-blue-700/50 transition-colors">
+                        <span key={i} className="px-2.5 py-0.5 bg-blue-800/50 text-xs rounded-full flex items-center font-inter border border-blue-700 hover:bg-blue-700/50 transition-colors">
                           {tech}
                         </span>
                       ))}

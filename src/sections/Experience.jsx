@@ -38,7 +38,7 @@ const Experience = ({ id }) => {
         </svg>
       ),
       title: "Hackathon Winner",
-      description: "Learn 2 Build 2024, InsightMed Hacks, ConCordia CS Hackathon Winner",
+      description: "Won 10+ hackathons including American Allegiance of Education, Learn2Build 2024, StartupMed, InsightMed Hacks, Concordia CS Hackathon, and Aethra Global Hackathon",
       color: "from-purple-600/20 to-purple-900/30",
       iconColor: "text-purple-400",
       borderColor: "border-purple-500/30"
@@ -50,7 +50,7 @@ const Experience = ({ id }) => {
         </svg>
       ),
       title: "Competitive Programming",
-      description: "5⭐ on HackerRank | 700+ questions on CodeChef/LeetCode | Professional certificate of C++, Python, HTML and MySQL",
+      description: "Achieved 5 star rating on HackerRank for C++, solved over 1000 DSA problems on LeetCode and CodeChef, maintaining a 1600+ contest rating",
       color: "from-green-600/20 to-green-900/30",
       iconColor: "text-green-400",
       borderColor: "border-green-500/30"
@@ -62,7 +62,7 @@ const Experience = ({ id }) => {
         </svg>
       ),
       title: "Industry level Certificates",
-      description: "Certified System Administrator | Certified Application Developer | EC-Council Certified Network Defender 2",
+      description: "Working as a Software Engineer at a Start Up (Forage) | Deloitte: Cyber Job Simulation (Forage) | Certified System Administrator (ServiceNow)",
       color: "from-yellow-600/20 to-yellow-900/30",
       iconColor: "text-yellow-400",
       borderColor: "border-yellow-500/30"

@@ -15,15 +15,15 @@ const Hero = ({ id }) => {
   const terminalContentRef = useRef(null);
 
   const titles = [
-    "Senior Full-Stack Developer",
-    "Cybersecurity Specialist",
-    "Cloud Architect",
-    "Webapp Developer"
+    "Full-Stack Developer",
+    "Cybersecurity Enthusiast",
+    "Cloud Explorer",
+    "Webapp Creator"
   ];
 
   const commands = {
     help: {
-      description: "- List all available commands",
+      description: "List all available commands",
       execute: () => addResponse([
         "Available commands:",
         ...Object.entries(commands).map(([cmd, { description }]) =>
@@ -35,68 +35,64 @@ const Hero = ({ id }) => {
       ])
     },
     clear: {
-      description: "- Clear terminal screen",
+      description: "Clear terminal screen",
       execute: () => setTerminalContent([])
     },
     intro: {
-      description: "- Display introduction",
+      description: "Display introduction",
       execute: () => addResponse([
-        "Harshit Singh - Senior Software Developer",
+        "Harshit Singh, Software Developer",
         " ",
-        "B.Tech in Computer Science & Engineering",
-        "Bennett University (CGPA: 9.23)",
+        "B.Tech in Computer Science and Engineering",
+        "Bennett University (Graduated, CGPA 9.34)",
         " ",
         "Specializing in:",
         "• Full-Stack Development (React/Node)",
-        "• Cybersecurity & Ethical Hacking",
-        "• Cloud Architecture (AWS)",
-        "• WebApp Developer"
+        "• AI and Cloud integrations",
+        "• Cybersecurity and Networking",
       ])
     },
     achievements: {
-      description: "- List key achievements",
+      description: "List key achievements",
       execute: () => addResponse([
         "🏆 Notable Achievements:",
-        "• 5-star on HackerRank (500+ problems solved)",
-        "• Winner: Learn 2 Build 2024 Hackathon",
-        "• InsightMed Hacks & ConCordia CS Winner",
-        "• 100% completion in C++, Python, MySQL",
-        "• Smart India Hackathon Participant"
+        "• Won 10+ hackathons including Learn2Build 2024 and InsightMed Hacks",
+        "• Developed SEO platform with over 3 million impressions",
+        "• 5 star rating on HackerRank for C++",
+        "• Solved over 1000 DSA problems on LeetCode and CodeChef"
       ])
     },
     certificates: {
-      description: "- List professional certificates",
+      description: "List professional certificates",
       execute: () => addResponse([
         "📜 Professional Certifications:",
-        "1. EC-Council Certified Network Defender",
-        "2. Certified System Administrator (ServiceNow)",
-        "3. AWS Academy Cloud Foundations",
-        "4. Google Cybersecurity Certification",
-        "5. IBM Cybersecurity Capstone",
+        "1. Working as a Software Engineer Job Simulation (Forage)",
+        "2. Cyber Job Simulation by Deloitte (Forage)",
+        "3. Certified System Administrator (ServiceNow)",
+        "4. Certified Application Developer (ServiceNow)",
         " ",
         "Type 'view cert <number>' for details"
       ])
     },
     projects: {
-      description: "- List key projects",
+      description: "List key projects",
       execute: () => addResponse([
         "💻 Notable Projects:",
-        "1. Android APK Scanner - Security tool",
-        "2. Advanced Image Steganography - AES encrypted",
-        "3. FarmingNow - AI agriculture assistant",
-        "4. BreakBuddy - Chrome productivity extension",
+        "1. ShikshaSathi AI: Voice-first AI teaching platform",
+        "2. SpendSense: Scalable AI-powered financial platform",
+        "3. CivicLens: Full-stack platform with RBAC",
         " ",
         "Type 'view project <number>' for details"
       ])
     },
     contact: {
-      description: "- Show contact information",
+      description: "Show contact information",
       execute: () => addResponse([
         "📨 Contact Information:",
         "Email:    sharshitsingh007@gmail.com",
         "LinkedIn: linkedin.com/in/harshit-singh-06834221b",
         "GitHub:   github.com/harshitSingh1",
-        "Phone:    +91 98765 43210",
+        "Phone:    +91 6394441778",
         " ",
         "Click the icons below to connect"
       ])
@@ -195,11 +191,10 @@ const Hero = ({ id }) => {
 
   const viewCertificate = (num) => {
     const certs = [
-      "EC-Council Certified Network Defender (May 2023)",
-      "Certified System Administrator - ServiceNow (Jul 2024)",
-      "AWS Academy Cloud Foundations [49763] (Sept 2023)",
-      "Foundations of Cybersecurity - Google (Jul 2023)",
-      "Cybersecurity Capstone - IBM (Oct 2023)"
+      "Working as a Software Engineer at a Start Up Job Simulation (Forage) (Jul 2026)",
+      "Deloitte: Cyber Job Simulation (Forage) (Apr 2026)",
+      "Certified System Administrator (ServiceNow) (Apr 2025)",
+      "Certified Application Developer (ServiceNow) (Apr 2025)"
     ];
 
     if (num >= 1 && num <= certs.length) {
@@ -211,10 +206,9 @@ const Hero = ({ id }) => {
 
   const viewProject = (num) => {
     const projects = [
-      "Android APK Scanner: Mobile app vulnerability scanner using Bash & Python (Nov 2024)",
-      "Advanced Image Steganography: Web app combining AES encryption with steganography (Nov 2024)",
-      "FarmingNow: Provides crop recommendations using NASA, Google Gemini APIs (Oct 2024)",
-      "BreakBuddy: Chrome extension with 10+ activities for productive breaks (Jul 2023)"
+      "ShikshaSathi AI: Voice-first AI teaching platform generating multilingual lessons, quizzes, visual learning flows, and AI narration with Gemini, ElevenLabs, structured prompt engineering, and speech recognition. (Jun 2026)",
+      "SpendSense: Scalable AI-powered financial intelligence platform with 15+ wealth planning tools, modular REST APIs, secure authentication, and MongoDB-backed architecture for personalized financial insights. (Apr 2026)",
+      "CivicLens: Scalable full-stack platform with role-based access control (RBAC) and structured workflows. (Nov 2025)"
     ];
 
     if (num >= 1 && num <= projects.length) {
@@ -399,7 +393,7 @@ const Hero = ({ id }) => {
                   <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-400 transition-colors cursor-pointer"></div>
                 </div>
                 <div className="text-blue-300 text-sm font-mono flex-1 text-center">
-                  portfolio-terminal — bash
+                  portfolio-terminal - bash
                 </div>
                 <div className="w-8"></div>
               </div>
@@ -464,13 +458,13 @@ const Hero = ({ id }) => {
                   <span>Interactive Portfolio Terminal</span>
                 </div>
                 <div className="flex space-x-4">
-                  <a href="https://github.com/harshit" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  <a href="https://github.com/harshitSingh1" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                     <FaGithub className="text-lg" />
                   </a>
-                  <a href="https://linkedin.com/in/harshit" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  <a href="https://linkedin.com/in/harshit-singh-06834221b" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                     <FaLinkedin className="text-lg" />
                   </a>
-                  <a href="mailto:harshit@example.com" className="hover:text-accent transition-colors">
+                  <a href="mailto:sharshitsingh007@gmail.com" className="hover:text-accent transition-colors">
                     <FaEnvelope className="text-lg" />
                   </a>
                 </div>

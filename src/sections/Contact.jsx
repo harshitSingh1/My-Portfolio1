@@ -34,8 +34,8 @@ const App = ({ id }) => {
     {
       icon: <FaPhone className="text-3xl" />,
       title: "Phone",
-      info: "+91 98765 43210",
-      link: "tel:+919876543210",
+      info: "+91 6394441778",
+      link: "tel:+916394441778",
       color: "from-green-400 to-teal-500"
     },
     {
