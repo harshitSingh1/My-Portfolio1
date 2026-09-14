@@ -4,7 +4,7 @@ Website: https://harshit-singh-portfolio1.vercel.app/
 
 # 🌊 Inspiration
 
-The ocean holds endless mysteries — the deeper we dive, the more wonders we uncover. Knowledge is no different. On the surface, things may seem simple, but as we explore deeper into any subject or idea, we discover layers we never imagined. This portfolio is inspired by that journey — a digital ocean that reflects my passion for diving deep into learning, creating, and growing as a developer
+The ocean holds endless mysteries - the deeper we dive, the more wonders we uncover. Knowledge is no different. On the surface, things may seem simple, but as we explore deeper into any subject or idea, we discover layers we never imagined. This portfolio is inspired by that journey - a digital ocean that reflects my passion for diving deep into learning, creating, and growing as a developer
 
 ---
 
